@@ -1,5 +1,8 @@
 %h1= @note.title
 %p= @note.content
+%p
+  Note By
+  = @note.user.email
 
 = link_to "Back", root_path
 = link_to "Edit", edit_note_path(@note)
